@@ -31,7 +31,7 @@ async function updateCourse(){
     const response = await fetch("http://localhost:3000/api/courses/" + courseID,{
         method: "PUT",
         headers: {
-           "Content-Type" : "applications/json"
+           "Content-Type" : "application/json"
         },
         body: JSON.stringify(course)
     })
