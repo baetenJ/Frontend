@@ -6,9 +6,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles.css">
-    <title>Add Course</title>
-    <script src="scripts/addCourse.js"></script>
-
+    <title>Home</title>
+    <script src="scripts/script.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg py-3 fixed-top">
@@ -44,10 +43,10 @@
   <section id="welcome" class="p-5 p-lg-0 pt-lg-5 text-center text-sm-start">
     <div class="container">
       <h1 class="text-center">
-        Teacher Course Registration
+        All Courses
       </h1>
       <p class="p-3 p-lg-0 pt-lg-3 pb-lg-5" id="info-paragraph">
-        Below you will find a form to fill out for courses you would like to add to the student registration portal.
+        Below you will find a list of all courses created. You may choose to add to, delete, and edit the course list.
       </p>
     </div>
   </section>
@@ -55,52 +54,24 @@
 
   <section id="instructors" class="p-5">
     <div class="container">
-      <h2 class="text-center text-black" style="font-weight: bold">Add Courses</h2>
-      <p class="lead text-center text-white mb-5" style="font-weight: bold">
-        All fields must be filled out before adding the course
-      </p>
       <div class="row g-3">
         <!--Student Sign Up-->
         <div class="col-md-6 col-lg-12">
           <div class="card bg-light">
             <div class="card-body text-center">
-              <i class="bi bi-backpack" style="font-size: 4em"></i>
-              <form id="courseForm" action="./allcourses.ejs" method="post">
 
-                <h1>Add a Course:</h1>
-    <form>
-        <div>
-            <label for="name">Course Name:</label>
-            <input type="text" name="name" id="name">
-        </div>
-
-        <div>
-            <label for="description">Course Description:</label>
-            <input type="text" name="description" id="description">
-        </div>
-
-        <div>
-            <label for="subArea">Subject Area:</label>
-            <input type="text" name="subArea" id="subArea">
-        </div>
-
-        <div>
-            <label for="numCreds">Number of Credits:</label>
-            <input type="number" min="1" max="4" name="numCreds" id="numCreds">
-        </div>
-
-        <div>
-            <input type="button" id="addBtn" value="Add Course">
-        </div>
-        <div id="error"></div>
-    </form>
+            <h1>Courses</h1>
+              <ul>
+                <div id="list_of_courses"></div>
+              </ul>
 
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </div> 
 
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

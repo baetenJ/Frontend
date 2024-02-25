@@ -1,0 +1,91 @@
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+  }
+  
+  html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    background-color: #f0ead6;
+  }
+  .navbar {
+    background-color: #614734;
+  }
+  #welcome-title {
+    color: #f0ead6;
+  }
+  .navbar-toggler {
+    background-color: #9f806b;
+  }
+  .nav-link{
+    color: #f0ead6;
+  }
+  #welcome{
+    background-color: #778d60;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 5px 5px #1E1E1E;
+    padding-top: 1em;
+  }
+  h1{
+    font-weight: bold;
+  }
+  #info-paragraph{
+    color: #f0ead6;
+    font-weight: bold;
+    font-size: 1.5em;
+  }
+  @media(min-width: 768px){
+    .news-input {
+      width: 50%;
+  }
+}
+  #navmenu {
+    color: #f0ead6;
+    padding: 5;
+  }
+
+  #instructors {
+    background-color: #778d60;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 5px 5px 5px #1E1E1E;
+    padding-top: 1em;
+  }
+
+  hr{
+    border: 1px solid #f0ead6;
+  }
+
+  #portal{
+    background-color: #778d60;
+    color:#1E1E1E;
+    box-shadow: 2px 2px 2px #1E1E1E
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  button:hover{
+    transform: scale(1.1);
+  }
+
+  footer
+{
+color: #614734; 
+font-size: .75em; 
+font-style: italic; 
+text-align: center; 
+padding: 1em;
+}
+
+li {
+  list-style-type: none;
+}

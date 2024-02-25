@@ -22,5 +22,5 @@ addEventListener("DOMContentLoaded", async function (){
 
     `
 
-    document.querySelector("div").innerHTML = html
+    document.querySelector("#courseInfo").innerHTML = html
 })
