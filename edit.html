@@ -43,39 +43,55 @@
     </div>
   </nav>
   <hr>
-    <h1>Courses</h1>
+  <section id="instructors" class="p-5">
+    <div class="container">
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-12">
+          <div class="card bg-light">
+            <div class="card-body text-center">
+
+              <i class="bi bi-pencil-square" style="font-size: 4em"></i>  
+              <h1>Edit Course</h1>
     
-    <form>
-        <div>
-            <label for="courseId">Course ID:</label>
-            <input type="text" name="courseId" id="courseId">
-        </div>
+              <form>
+                <div>
+                  <label for="courseId" class="col-md-12 col-lg-6 p-2">Course ID:</label>
+                  <input type="text" name="courseId" id="courseId" class="col-md-12 col-lg-6 p-2">
+                </div>
 
-        <div>
-            <label for="name">Course Name:</label>
-            <input type="text" name="name" id="name">
-        </div>
+                <div>
+                  <label for="name" class="col-md-12 col-lg-6 p-2">Course Name:</label>
+                  <input type="text" name="name" id="name" class="col-md-12 col-lg-6 p-2">
+                </div>
 
-        <div>
-            <label for="description">Course Description:</label>
-            <input type="text" name="description" id="description">
-        </div>
+                <div>
+                  <label for="description" class="col-md-12 col-lg-6 p-2">Course Description:</label>
+                  <input type="text" name="description" id="description" class="col-md-12 col-lg-6 p-2">
+                </div>
 
-        <div>
-            <label for="subArea">Subject Area:</label>
-            <input type="text" name="subArea" id="subArea">
-        </div>
+                <div>
+                  <label for="subArea" class="col-md-12 col-lg-6 p-2">Subject Area:</label>
+                  <input type="text" name="subArea" id="subArea" class="col-md-12 col-lg-6 p-2">
+                </div>
 
-        <div>
-            <label for="numCreds">Number of Credits:</label>
-            <input type="number" min="1" max="4" name="numCreds" id="numCreds">
-        </div>
+                <div>
+                  <label for="numCreds" class="col-md-12 col-lg-6 p-2">Number of Credits:</label>
+                  <input type="number" min="1" max="4" name="numCreds" id="numCreds" class="col-md-12 col-lg-6 p-2">
+                </div>
 
-        <div>
-            <input type="button" id="updateBtn" value="Update Course">
+                <br>
+                <div>
+                  <input type="button" id="updateBtn" value="Update Course" class="p-2">
+                </div>
+                <br>
+                <div id="error"></div>
+              </form>
+            </div>
+          </div>
         </div>
-        <div id="error"></div>
-    </form>
+      </div>
+    </div>
+  </section>
 
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>

@@ -50,7 +50,7 @@
       <h1 class="text-center">
         Delete Courses
       </h1>
-      <p class="p-3 p-lg-0 pt-lg-3 pb-lg-5" id="info-paragraph">
+      <p class="p-3 p-lg-0 pt-lg-3 pb-lg-5 text-center" id="info-paragraph">
         Below you will find a form that allows you to delete courses that are no longer available for students.
       </p>
     </div>
@@ -65,13 +65,15 @@
           <div class="card bg-light">
             <div class="card-body text-center">
 
+            <i class="bi bi-trash" style="font-size: 4em"></i>  
             <h1>Delete a Course</h1>
-            <p>Use the dropdown menu below to select and delete a course.</p>
+            <p id="deleteP">Use the dropdown menu below to select and delete a course.</p>
 
-            <form>
-                <select id="courseDropdown"></select>
-                <input type="button" value="Delete" id="deleteBtn">
+            <form class="">
+                <select id="courseDropdown" class="p-1"></select>
+                <input type="button" value="Delete" id="deleteBtn" class="p-1">
                 <div id="error"></div>
+                <br>
             </form>
               
 

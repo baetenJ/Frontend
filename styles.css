@@ -89,3 +89,126 @@ padding: 1em;
 li {
   list-style-type: none;
 }
+
+label {
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
+
+
+#name{
+  background-color: #f0ead6;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+
+#description{
+  background-color: #f0ead6;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+
+#subArea{
+  background-color: #f0ead6;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+
+#numCreds{
+  background-color: #f0ead6;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#courseId{
+  background-color: #f0ead6;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#addBtn{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#addStudentCourse{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#courseDropdown{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#deleteBtn{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#updateBtn{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
+#detailsHeader{
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+}
+
+#courseInfo{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#list_of_courses{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  text-align: left;
+}
+
+#deleteP{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#addP{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
+
+#studentP{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
