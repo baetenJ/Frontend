@@ -170,6 +170,15 @@ label {
   box-shadow: 2px 2px 2px #1E1E1E;
 }
 
+#registerBtn{
+  background-color: #f0ead6;
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+  box-shadow: 2px 2px 2px #1E1E1E;
+}
+
 #detailsHeader{
   margin-left: auto;
   margin-right: auto;
