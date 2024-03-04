@@ -1,5 +1,5 @@
 // done for every page
-class Auth{
+class Auth {
     constructor(){
         document.querySelector("body").style.display = "none"
         const auth = localStorage.getItem("auth")
