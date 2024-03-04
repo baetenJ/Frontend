@@ -1,7 +1,8 @@
-let token = 
+let token ;
+const form = document.querySelector(form);
 
 window.onload=function(){
-document.querySelector("#loginBtn").addEventListener("click", function(){
+form.addEventListener("submit", function(){
     const username = document.querySelector("#username").value
     const password = document.querySelector("#password").value
 
@@ -21,8 +22,8 @@ async function login(username, password){
         },
         body: JSON.stringify(login_cred)
     })
-    if(response.ok){
-        const tokenResponse = await response.json()
+    const tokenResponse = await response.json()
+    if(tokenResponse.ok){
         token = tokenResponse.token
         uname = tokenResponse.username2
         auth = tokenResponse.auth
