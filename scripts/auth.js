@@ -1,27 +1,30 @@
-// done for every page
 class Auth {
-    constructor(){
-        document.querySelector("body").style.display = "none"
-        const auth = localStorage.getItem("auth")
-        this.validateAuth(auth)
+    constructor() {
+        this.body = document.querySelector("body");
+        this.checkAuth();
     }
 
-
-    validateAuth(auth){
-        if(auth != 1){
-            window.location.replace("/login.html")
-        }
-        else {
-            document.querySelector("body").style.display = "block"
+    checkAuth() {
+        const auth = localStorage.getItem("auth");
+        if (auth !== "1") {
+            this.redirectToLogin();
+        } else {
+            this.showBody();
         }
     }
 
-    logOut(){
-        localStorage.removeItem("auth")
-        localStorage.removeItem("token")
-        localStorage.removeItem("uname")
-
-        window.location.replace("/login.html")
+    showBody() {
+        window.location.href = "/index.html";
     }
 
+    redirectToLogin() {
+        window.location.href = "/login.html";
+    }
+
+    logOut() {
+        localStorage.removeItem("auth");
+        localStorage.removeItem("token");
+        localStorage.removeItem("uname");
+        this.redirectToLogin();
+    }
 }

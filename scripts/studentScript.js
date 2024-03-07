@@ -6,7 +6,7 @@ addEventListener("DOMContentLoaded", async function() {
     let checkBoxHtml = ""
     let identifier = 0
     for (let course of courses){
-        checkBoxHtml += `<li><input type="checkbox" value="${course.course_name}" id="courseCheck${identifier}"><label for="courseCheck">&nbsp&nbsp${course.course_name}</label></li>`
+        checkBoxHtml += `<li><input type="checkbox" value="${course.course_name}" id=courseCheck${identifier}><label for="courseCheck">&nbsp&nbsp${course.course_name}</label></li>`
         identifier += 1
     }
 
@@ -28,26 +28,19 @@ addEventListener("DOMContentLoaded", async function() {
         let form = document.querySelector("#studentForm")
         let identifier = 0
 
-        /*
-        if (document.querySelector("#courseCheck").checked){
-        registeredHtml += `<li>${course.course_name} - ${course.subject_area} - ${course.cred_number}</li>`
+        const classChecked = document.querySelector("#courseCheck3").checked;
+        for (let course of courses){
+            if (classChecked){
+                registeredHtml += `<li>${course.course_name} - ${course.subject_area} - ${course.cred_number}</li>`
+            }
+            else {
+                registeredHtml += `<p>This is not working</p>`
+            }
+
+            document.querySelector("#studentSignedUp").innerHTML = registeredHtml
         }
+    }
 
-        document.querySelector("#studentSignedUp").innerHTML = registeredHtml
-    }
-    */
-    const classChecked = document.querySelector("#courseCheck1").checked;
-    for (let course of courses){
-    if (classChecked){
-        registeredHtml += `<li>${course.course_name} - ${course.cred_number}</li>`
-    }
-    else {
-        registeredHtml += `<p>You have not enrolled in any classes</p>`
-    }
-    document.querySelector("#studentSignedUp").innerHTML = registeredHtml
-
-}
-}
 }) 
 
 
