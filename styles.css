@@ -244,3 +244,17 @@ label {
   width : 50%;
   font-size : 1.5em;
 }
+
+#studentSignedUp{
+  color: #614734;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.5em;
+}
+
+#yourClasses{
+  color: #1E1E1E;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1em;
+}
