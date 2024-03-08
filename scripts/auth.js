@@ -1,15 +1,15 @@
 class Auth {
     constructor() {
-        this.body = document.querySelector("body");
-        this.checkAuth();
+        body = document.querySelector("body");
+        checkAuth();
     }
 
     checkAuth() {
         const auth = localStorage.getItem("auth");
         if (auth !== "1") {
-            this.redirectToLogin();
+            redirectToLogin();
         } else {
-            this.showBody();
+            showBody();
         }
     }
 
@@ -25,6 +25,6 @@ class Auth {
         localStorage.removeItem("auth");
         localStorage.removeItem("token");
         localStorage.removeItem("uname");
-        this.redirectToLogin();
+        redirectToLogin();
     }
 }
