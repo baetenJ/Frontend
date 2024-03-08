@@ -21,26 +21,27 @@ addEventListener("DOMContentLoaded", async function() {
     }
 */
 
-    async function registerClicked(){
-        const response = await fetch ("http://localhost:3000/api/courses")
-        const courses = await response.json();
-        let registeredHtml = ""
-        let form = document.querySelector("#studentForm")
-        let identifier = 0
+async function registerClicked() {
+    const response = await fetch("http://localhost:3000/api/courses");
+    const courses = await response.json();
+    let registeredHtml = "";
+    let form = document.querySelector("#studentForm");
+    let checkboxes = form.querySelectorAll("input[type=checkbox]");
 
-        const classChecked = document.querySelector("#courseCheck3").checked;
-        for (let course of courses){
-            if (classChecked){
-                registeredHtml += `<li>${course.course_name} - ${course.subject_area} - ${course.cred_number}</li>`
-            }
-            else {
-                registeredHtml += `<p>This is not working</p>`
-            }
-
-            document.querySelector("#studentSignedUp").innerHTML = registeredHtml
+    checkboxes.forEach((checkbox, index) => {
+        if (checkbox.checked) {
+            registeredHtml += `<li>${courses[index].course_name} - ${courses[index].subject_area} - ${courses[index].cred_number}</li>`;
         }
+    });
+
+    if (registeredHtml === "") {
+        registeredHtml = "<p>No courses selected.</p>";
     }
 
-}) 
+    document.querySelector("#studentSignedUp").innerHTML = registeredHtml;
+}
+
+}
+)
 
 
